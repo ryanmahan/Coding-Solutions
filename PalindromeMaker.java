@@ -29,7 +29,14 @@ public class PalindromeMaker {
 		return inputs; //return all 3 variables
 	}
 
-	
+	/*
+	* Recursively creates the palindrome while counting changes and distance from endpoints
+	* @param Char[] num - character array of numbers to change
+	* 	 int maxChanges - maximum number of changes allowed before printing -1
+	*	 int dist - distance from endpoints, starts at 0 and increases with iterations
+	*	 int changes - tracks the number of changes done to the char[], increases when changes are made
+	* @return the palindromed char[] or -1, if changes > maxChanges
+	*/
 	public static char[] recursiveSwitcher(char[] num, int maxChanges, int dist, int changes) throws Exception{
 		int upperBound = num.length - dist -1;
 		if(changes > maxChanges){
