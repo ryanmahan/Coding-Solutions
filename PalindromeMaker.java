@@ -2,6 +2,9 @@ package palindromeMaker;
 
 import java.util.Scanner;
 
+// Challenge found at: https://www.hackerrank.com/challenges/richie-rich
+
+
 public class PalindromeMaker {
 	/*
 	 * A Helper method used to get user input and import it into the main method.
