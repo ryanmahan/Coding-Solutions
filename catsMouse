@@ -1,0 +1,31 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+//https://www.hackerrank.com/challenges/cats-and-a-mouse
+
+int main(){
+    int q; 
+    scanf("%d",&q);
+    for(int a0 = 0; a0 < q; a0++){
+        int x; 
+        int y; 
+        int z; 
+        scanf("%d %d %d",&x,&y,&z);
+        
+        int xDist = abs(x-z);
+        int yDist = abs(y-z);
+        if(xDist > yDist){
+            printf("%s\n", "Cat B");
+        } else if(yDist > xDist){
+            printf("%s\n", "Cat A");
+        } else {
+            printf("%s\n", "Mouse C");
+        } 
+    }
+    return 0;
+}
