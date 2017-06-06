@@ -2,6 +2,9 @@
 
 from functools import reduce
 
+# a BFS solution to https://www.hackerrank.com/challenges/botclean
+
+
 # Head ends here
 def next_move(posr, posc, board):
       n = list(reduce(lambda x, y: x+y, board)).count("d")
